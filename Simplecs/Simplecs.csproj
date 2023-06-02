@@ -14,12 +14,12 @@
     <NullableReferenceTypes>true</NullableReferenceTypes>
   </PropertyGroup>
 
-  <!-- Packaging configuration -->
-  <PropertyGroup>
-    <PackageId>Simplecs</PackageId>
-    <Authors>Sean Middleditch</Authors>
-    <PackageLicenseExpression>CC0-1.0</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/seanmiddleditch/Simplecs</RepositoryUrl>
-  </PropertyGroup>
-
+	<!-- Packaging configuration -->
+	<PropertyGroup>
+		<PackageId>Simplecs</PackageId>
+		<Version>0.1.1</Version>
+		<Authors>Sean Middleditch</Authors>
+		<PackageLicenseExpression>CC0-1.0</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/seanmiddleditch/Simplecs</RepositoryUrl>
+	</PropertyGroup>
 </Project>

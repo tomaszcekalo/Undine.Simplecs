@@ -66,6 +66,7 @@ namespace Undine.Simplecs
 
         public void ProcessAll()
         {
+            //throw new NotImplementedException();
             var view = World.CreateView().Select<A, B, C, D>();
             foreach (var item in view)
             {

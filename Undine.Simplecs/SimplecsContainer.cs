@@ -12,7 +12,8 @@ namespace Undine.Simplecs
         {
             Systems.Add(new SimplecsSystem<A>()
             {
-                System = system
+                System = system,
+                World = _world
             });
         }
 
@@ -20,7 +21,8 @@ namespace Undine.Simplecs
         {
             Systems.Add(new SimplecsSystem<A, B>()
             {
-                System = system
+                System = system,
+                World = _world
             });
         }
 
@@ -28,7 +30,8 @@ namespace Undine.Simplecs
         {
             Systems.Add(new SimplecsSystem<A, B, C>()
             {
-                System = system
+                System = system,
+                World = _world
             });
         }
 
@@ -36,7 +39,8 @@ namespace Undine.Simplecs
         {
             Systems.Add(new SimplecsSystem<A, B, C, D>()
             {
-                System = system
+                System = system,
+                World = _world
             });
         }
 
@@ -49,7 +53,8 @@ namespace Undine.Simplecs
         {
             return new SimplecsSystem<A>()
             {
-                System = system
+                System = system,
+                World = _world
             };
         }
 
@@ -57,7 +62,8 @@ namespace Undine.Simplecs
         {
             return new SimplecsSystem<A, B>()
             {
-                System = system
+                System = system,
+                World = _world
             };
         }
 
@@ -65,7 +71,8 @@ namespace Undine.Simplecs
         {
             return new SimplecsSystem<A, B, C>()
             {
-                System = system
+                System = system,
+                World = _world
             };
         }
 
@@ -73,7 +80,8 @@ namespace Undine.Simplecs
         {
             return new SimplecsSystem<A, B, C, D>()
             {
-                System = system
+                System = system,
+                World = _world
             };
         }
 
