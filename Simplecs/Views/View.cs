@@ -139,6 +139,9 @@ namespace Simplecs.Views
         }
     }
 
+    /// <summary>
+    /// View over entities matching a specific signature.
+    /// </summary>
     public sealed class View<T1, T2, T3, T4> : IView<ViewRow<T1, T2, T3, T4>>
         where T1 : struct
         where T2 : struct

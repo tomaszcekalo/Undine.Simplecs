@@ -77,6 +77,9 @@ namespace Simplecs.Views
         internal ViewRow(View<T1, T2, T3> view, Entity entity, int index1, int index2, int index3) => (_view, Entity, _index1, _index2, _index3) = (view, entity, index1, index2, index3);
     }
 
+    /// <summary>
+    /// Single row or set of components for a given view.
+    /// </summary>
     public readonly struct ViewRow<T1, T2, T3, T4>
         where T1 : struct
         where T2 : struct

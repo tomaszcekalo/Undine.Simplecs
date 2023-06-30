@@ -69,6 +69,9 @@ namespace Simplecs
         /// </summary>
         public View<T1, T2, T3> Select<T1, T2, T3>() where T1 : struct where T2 : struct where T3 : struct => new View<T1, T2, T3>(Table<T1>(), Table<T2>(), Table<T3>(), Predicate());
 
+        /// <summary>
+        /// Creates a View that selects the specified components.
+        /// </summary>
         public View<T1, T2, T3, T4> Select<T1, T2, T3, T4>() where T1 : struct where T2 : struct where T3 : struct where T4 : struct => new View<T1, T2, T3, T4>(Table<T1>(), Table<T2>(), Table<T3>(), Table<T4>(), Predicate());
 
         private ViewPredicate Predicate() => new ViewPredicate(tables: _excluded != null ? (_required != null ? _excluded.Concat(_required).ToArray() : _excluded.ToArray()) : _required?.ToArray(), excludedCount: _excluded?.Count ?? 0);
