@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Undine.Simplecs", "Undine.Simplecs\Undine.Simplecs.csproj", "{BE433B75-8922-4973-96BB-025B29C65F8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Undine.Simplecs", "Undine.Simplecs\Undine.Simplecs.csproj", "{BE433B75-8922-4973-96BB-025B29C65F8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Undine.Simplecs.Console", "Undine.Simplecs.Console\Undine.Simplecs.Console.csproj", "{6F6F7DC1-3A36-4B22-AD8A-89643E18BE4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Undine.Simplecs.Console", "Undine.Simplecs.Console\Undine.Simplecs.Console.csproj", "{6F6F7DC1-3A36-4B22-AD8A-89643E18BE4A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simplecs", "Simplecs\Simplecs.csproj", "{13493BC7-012F-44B8-A2E3-88A9B30DB432}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Undine.Simplecs.Tests", "Undine.Simplecs.Tests\Undine.Simplecs.Tests.csproj", "{CAF03AEC-B0A5-4070-9344-127DB17C13D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{13493BC7-012F-44B8-A2E3-88A9B30DB432}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13493BC7-012F-44B8-A2E3-88A9B30DB432}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13493BC7-012F-44B8-A2E3-88A9B30DB432}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAF03AEC-B0A5-4070-9344-127DB17C13D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAF03AEC-B0A5-4070-9344-127DB17C13D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAF03AEC-B0A5-4070-9344-127DB17C13D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAF03AEC-B0A5-4070-9344-127DB17C13D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
