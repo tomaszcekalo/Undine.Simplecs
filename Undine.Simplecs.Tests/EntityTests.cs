@@ -1,9 +1,7 @@
-﻿using Moq;
-using Undine.Core;
+﻿using Undine.Core;
 using Undine.Simplecs.Tests.Components;
 using Undine.Simplecs;
-
-using Undine.Simplecs.Tests.Components;
+using NSubstitute;
 
 namespace Undine.Simplecs.Tests
 {
@@ -28,12 +26,12 @@ namespace Undine.Simplecs.Tests
         public void ComponentCanBeRetrieved()
         {
             var container = new SimplecsContainer();
-            var mock = new Mock<UnifiedSystem<AComponent>>();
-            container.AddSystem(mock.Object);
+            var mock = Substitute.For<UnifiedSystem<AComponent>>();
+            container.AddSystem(mock);
             container.Init();
             var entity = (SimplecsEntity)container.CreateNewEntity();
             entity.AddComponent(new AComponent());
-            container.Run();//LazyECS updates components on the next frame
+            container.Run();
             ref var component = ref entity.GetComponent<AComponent>();
             Assert.IsNotNull(component);
         }//
