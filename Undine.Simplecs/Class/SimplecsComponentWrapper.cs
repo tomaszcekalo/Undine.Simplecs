@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Undine.Simplecs.Tests.Components
+namespace Undine.Simplecs.Class
 {
-    public struct BComponent
+    public struct SimplecsComponentWrapper<T> 
+        where T : class
     {
+        public T Component;
     }
 }

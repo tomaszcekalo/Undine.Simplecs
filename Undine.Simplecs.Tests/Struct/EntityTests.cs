@@ -1,9 +1,9 @@
-﻿using Undine.Core;
-using Undine.Simplecs.Tests.Components;
-using Undine.Simplecs;
-using NSubstitute;
+﻿using NSubstitute;
+using Undine.Core.Struct;
+using Undine.Simplecs.Struct;
+using Undine.Simplecs.Tests.Struct.Components;
 
-namespace Undine.Simplecs.Tests
+namespace Undine.Simplecs.Tests.Struct
 {
     [TestClass]
     public class EntityTests

@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Undine.Core;
-using Undine.Simplecs;
+using Undine.Core.Struct;
+using Undine.Simplecs.Struct;
 
 Console.WriteLine("Hello, World!");
 var container = new SimplecsContainer();

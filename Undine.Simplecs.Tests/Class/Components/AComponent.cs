@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Undine.Simplecs.Tests.Components
+namespace Undine.Simplecs.Tests.Class.Components
 {
-    public struct CComponent
+    public class AComponent
     {
     }
 }

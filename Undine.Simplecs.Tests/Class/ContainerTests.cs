@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Undine.Core;
-using Undine.Simplecs.Tests.Components;
+using Undine.Core.Class;
+using Undine.Simplecs.Class;
+using Undine.Simplecs.Tests.Class.Components;
 
-namespace Undine.Simplecs.Tests
+namespace Undine.Simplecs.Tests.Class
 {
     [TestClass]
     public class ContainerTests

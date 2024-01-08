@@ -1,7 +1,8 @@
 ﻿using Simplecs;
 using Undine.Core;
+using Undine.Core.Struct;
 
-namespace Undine.Simplecs
+namespace Undine.Simplecs.Struct
 {
     public class SimplecsEntity : IUnifiedEntity
     {

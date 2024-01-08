@@ -1,7 +1,13 @@
 ﻿using Simplecs;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Undine.Core;
+using Undine.Core.Class;
 
-namespace Undine.Simplecs
+namespace Undine.Simplecs.Class
 {
     public class SimplecsContainer : EcsContainer
     {

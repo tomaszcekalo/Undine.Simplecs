@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Undine.Simplecs.Tests.Components
+namespace Undine.Simplecs.Tests.Struct.Components
 {
     public struct DComponent
     {
