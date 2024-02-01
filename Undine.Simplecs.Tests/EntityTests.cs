@@ -34,6 +34,20 @@ namespace Undine.Simplecs.Tests
             container.Run();
             ref var component = ref entity.GetComponent<AComponent>();
             Assert.IsNotNull(component);
-        }//
+        }
+        [TestMethod]
+        public void ComponentCanBeRemoved() 
+        {
+            var container = new SimplecsContainer();
+            var mock = Substitute.For<UnifiedSystem<AComponent>>();
+            container.AddSystem(mock);
+            container.Init();
+            var entity = (SimplecsEntity)container.CreateNewEntity();
+            entity.AddComponent(new AComponent());
+            container.Run();
+            ref var component = ref entity.GetComponent<AComponent>();
+            entity.RemoveComponent<AComponent>();
+            Assert.IsFalse(entity.HasComponent<AComponent>());
+        }
     }
 }

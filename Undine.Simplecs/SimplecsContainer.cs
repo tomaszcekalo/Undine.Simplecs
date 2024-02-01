@@ -59,6 +59,15 @@ namespace Undine.Simplecs
             return new SimplecsEntity(_world);
         }
 
+        public override void DeleteEntity(IUnifiedEntity entity)
+        {
+            var entityToDelete = entity as SimplecsEntity;
+            if(entityToDelete is not null)
+            {
+
+            }
+        }
+
         public override ISystem GetSystem<A>(UnifiedSystem<A> system)
         {
             base.RegisterComponentType<A>();

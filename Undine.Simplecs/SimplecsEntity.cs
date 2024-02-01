@@ -23,5 +23,15 @@ namespace Undine.Simplecs
         {
             return ref _world.GetComponent<A>(_entityBuilder.Entity);
         }
+
+        public void RemoveComponent<A>() where A : struct
+        {
+            _world.Detach<A>(_entityBuilder.Entity);
+        }
+
+        public bool HasComponent<A>() where A : struct
+        {
+            return _world.HasComponent<A>(_entityBuilder.Entity);
+        }
     }
 }
